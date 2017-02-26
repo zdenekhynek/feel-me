@@ -1,0 +1,11 @@
+- examples:
+
+	I want to feel hopefull about global warming.
+	I want to feel hopeless about Donald Trump.
+	I want to feel excited about the housing prices in London.
+
+
+- topic:
+
+	- narrative for 5 different emotions
+	- classify emotion on scale 
