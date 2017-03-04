@@ -1,11 +1,14 @@
 var xml = require('xml');
 var path = require('path');
 var topics = require('../config/topics.json');
+var twilio = require('twilio');
 
 // Map routes to controller functions
 module.exports = function(router) {
-  router.get('/topics/:topicId/feels/:feelId', function(req, resp) {
-  	var { topicId, feelId } = req.params;
+  router.post('/topics', function(req, resp) {
+  	var topicId = 'global-warming';
+  	var feelId = req.body.Body;
+
   	var topic = topics.find((t) => t.id === topicId);
 
   	if (topic) {
@@ -14,12 +17,13 @@ module.exports = function(router) {
 
 	  	if (feel) {
 	  		var content = feel.content;
-	  		console.log('content');
-	  		console.log(content);
+	  		
+			var twiml = new twilio.TwimlResponse();
+			twiml.message(content.text);
 
-	  		resp.set('Content-Type', 'text/xml');
-			return resp.send(xml(content));
-	  	}
+			resp.writeHead(200, {'Content-Type': 'text/xml'});
+    		return resp.end(twiml.toString());
+		}
   	}
 
   	return resp.send('Nothing found');
