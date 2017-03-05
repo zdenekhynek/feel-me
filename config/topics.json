@@ -1,13 +1,13 @@
 [
 	{ 
 		"id": "global-warming",
-		"label": "Global warming",
+		"label": "global warming",
 		"feels": [
 			{
 				"id": "confident",
 				"label": "confident",
 				"content": {
-					"text": "<p>I feel confident that we WILL reduce emissions to slow global warming to a pace to which we can (mostly) adapt.</p><p>Firstly, because in 2015, more than 1.5% of all articles in the New York Times mentioned “climate change”. This compares with 2% of articles that mentioned “terrorism” and 1.4% that mentioned “refugees”. As in other countries, the media profile of “climate change” is now very strong – politicians and the public see reports about our changing climate almost daily.</p><p>Secondly, in 2015 over 15,000 scholarly papers were published with the topic of “climate “change”, “greenhouse effect”, or “global warming” as the topic. In 1988, the year the IPCC was established, only 68 scholarly articles published on these topics.</p><p>With such strong and growing media and expert interest, how can we fail?</p>",
+					"text": "In 2015, more than 1.5% of all articles in the New York Times mentioned “climate change”. This compares with 2% of articles that mentioned “terrorism” and 1.4% that mentioned “refugees”. Also over 15,000 scholarly papers were published with the topic of “climate “change”. In 1988, only 68 scholarly articles published on these topics.With such strong and growing media and expert interest, how can we fail?",
 					"source": "<a href='http://www.isthishowyoufeel.com/this-is-how-scientists-feel.html' target='_blank'>Neville Nicholls  Professor Emeritus, School of Earth, Atmosphere and Environment Monash University, Australia</a>"
 				}
 			},
@@ -15,7 +15,7 @@
 				"id": "frustrated",
 				"label": "frustrated",
 				"content": {
-					"text": "<p>I feel frustrated that I cannot even convince those closest to me that we are, as a society, being irresponsible, and our children, grandchildren, and people around the world will pay the price. Don’t we feel compassion for these people and the life we are signing them up for?.</p><p>And sometimes I feel powerless in the face of powerful forces arguing against action.</p>",
+					"text": "I feel frustrated that I cannot even convince those closest to me that we are, as a society, being irresponsible, and our children, grandchildren, and people around the world will pay the price. Don’t we feel compassion for these people and the life we are signing them up for?.And sometimes I feel powerless in the face of powerful forces arguing against action.",
 					"source": "<a href='http://www.isthishowyoufeel.com/this-is-how-scientists-feel.html' target='_blank'>Anna Harper, Research Fellow, University of Exeter, UK</a>"
 				}
 			},
@@ -23,7 +23,7 @@
 				"id": "tired",
 				"label": "tired",
 				"content": {
-					"text": "<p>This is how I feel about climate change. At times I think this is not right. There is so much noise around the issue that I often feel compelled to be outraged by our own inability as a species to response to the challenge climate change poses. But the truth is that more often than not I just feel tired.</p><p>As a scientist I found consensus incredibly boring! What motivated me to become a scientist in the first place was my desire to explain and model things we did not understand. It was never about preaching others about an existing scientific consensus. I feel uncomfortable in this strange role nearly as much as I am in discussing about believing or not in climate change. I am also tired of a debate that often becomes confrontational, dogmatic and sterile.</p>",
+					"text": "<p>There is so much noise around the issue that I often feel compelled to be outraged by our own inability as a species to response to the challenge climate change poses. But the truth is that more often than not I just feel tired.",
 					"source": "<a href='http://www.isthishowyoufeel.com/this-is-how-scientists-feel.html' target='_blank'>Carlo Buontempo</a>"
 				}
 			}
