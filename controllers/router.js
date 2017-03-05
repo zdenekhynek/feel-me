@@ -3,12 +3,12 @@ var path = require('path');
 var topics = require('../config/topics.json');
 var twilio = require('twilio');
 
-var { parseMessage } = require('../messageParser');
+var { parseMessage, parseEmoji } = require('../messageParser');
 
 // Map routes to controller functions
 module.exports = function(router) {
   router.post('/topics', function(req, resp) {
-  	var { topicId, feelId } = parseMessage(req.body.Body);
+  	var { topicId, feelId } = parseEmoji(req.body.Body); //	parseMessage(req.body.Body);
   	var topic = topics.find((t) => t.label === topicId);
 
   	if (topic) {
