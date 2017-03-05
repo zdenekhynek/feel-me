@@ -1,16 +1,16 @@
-var path = require('path');
-var express = require('express');
-var bodyParser = require('body-parser');
-var session = require('express-session');
-var flash = require('connect-flash');
-var morgan = require('morgan');
-var csurf = require('csurf');
+const path = require('path');
+const express = require('express');
+const bodyParser = require('body-parser');
+const session = require('express-session');
+const flash = require('connect-flash');
+const morgan = require('morgan');
+const csurf = require('csurf');
 
-var config = require('./config');
-var twilioNotifications = require('./middleware/twilioNotifications');
+const config = require('./config');
+const twilioNotifications = require('./middleware/twilioNotifications');
 
 // Create Express web app
-var app = express();
+const app = express();
 
 // Use morgan for HTTP request logging in dev and prod
 if (process.env.NODE_ENV !== 'test') {
@@ -36,8 +36,8 @@ app.use(session({
 app.use(flash());
 
 // Configure application routes
-var routes = require('./controllers/router');
-var router = express.Router();
+const routes = require('./controllers/router');
+const router = express.Router();
 
 // Add CSRF protection for web routes
 // if (process.env.NODE_ENV !== 'test') {

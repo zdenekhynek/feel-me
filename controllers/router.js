@@ -1,24 +1,24 @@
-var xml = require('xml');
-var path = require('path');
-var topics = require('../config/topics.json');
-var twilio = require('twilio');
+const xml = require('xml');
+const path = require('path');
+const topics = require('../config/topics.json');
+const twilio = require('twilio');
 
-var { parseMessage, parseEmoji } = require('../messageParser');
+const { parseMessage, parseEmoji } = require('../messageParser');
 
 // Map routes to controller functions
 module.exports = function(router) {
   router.post('/topics', function(req, resp) {
-  	var { topicId, feelId } = parseEmoji(req.body.Body); //	parseMessage(req.body.Body);
-  	var topic = topics.find((t) => t.label === topicId);
+  	const { topicId, feelId } = parseEmoji(req.body.Body); //	parseMessage(req.body.Body);
+  	const topic = topics.find((t) => t.label === topicId);
 
   	if (topic) {
-  		var feels = topic.feels;
-	  	var feel = feels.find((f) => f.label === feelId);
+  		const feels = topic.feels;
+	  	const feel = feels.find((f) => f.label === feelId);
 
 	  	if (feel) {
-	  		var content = feel.content;
+	  		const content = feel.content;
 
-			var twiml = new twilio.TwimlResponse();
+			const twiml = new twilio.TwimlResponse();
 			twiml.message(content.text);
 
 			resp.writeHead(200, {'Content-Type': 'text/xml'});
