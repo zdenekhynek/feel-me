@@ -8,7 +8,7 @@ const { parseMessage, parseEmoji } = require('../messageParser');
 // Map routes to controller functions
 module.exports = function(router) {
   router.post('/topics', function(req, resp) {
-  	const { topicId, feelId } = parseEmoji(req.body.Body); //	parseMessage(req.body.Body);
+  	const { topicId, feelId } = parseMessage(req.body.Body);// parseEmoji(req.body.Body);
   	const topic = topics.find((t) => t.label === topicId);
 
   	if (topic) {
